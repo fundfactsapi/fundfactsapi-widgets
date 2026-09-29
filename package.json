@@ -1,0 +1,36 @@
+{
+  "name": "@fundfactsapi/widgets",
+  "version": "0.2.0",
+  "description": "React widgets for FundFacts API payloads: growth chart, donut, weight bars, key-fact tiles, SRRI risk scale, profile chips, calendar and annualised returns, and a complete factsheet from one response. Zero dependencies, inline styles, themeable with CSS variables.",
+  "keywords": ["react", "fund data", "ETF", "ISIN", "factsheet", "charts", "widgets", "holdings", "TER", "SRRI", "fundfacts"],
+  "homepage": "https://fundfactsapi.com",
+  "author": "FundFacts API <hello@fundfactsapi.com> (https://fundfactsapi.com)",
+  "bugs": { "url": "https://github.com/fundfactsapi/fundfactsapi-widgets/issues" },
+  "repository": { "type": "git", "url": "git+https://github.com/fundfactsapi/fundfactsapi-widgets.git" },
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js", "require": "./dist/index.cjs" }
+  },
+  "files": ["dist", "README.md"],
+  "sideEffects": false,
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --clean --external react --external react/jsx-runtime",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": { "access": "public" },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "devDependencies": {
+    "@types/react": "^19",
+    "react": "^19",
+    "tsup": "^8.3.0",
+    "typescript": "^5"
+  }
+}

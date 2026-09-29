@@ -1,0 +1,14 @@
+export { GrowthChart, type GrowthChartProps } from "./GrowthChart";
+export { DonutChart, type DonutChartProps } from "./DonutChart";
+export { WeightBars, type WeightBarsProps } from "./WeightBars";
+export { StatTiles, type StatTilesProps, type Stat } from "./StatTiles";
+export { KeyFacts, RiskMetrics, type KeyFactsProps, type RiskMetricsProps } from "./KeyFacts";
+export { RiskScale, type RiskScaleProps } from "./RiskScale";
+export { ProfileChips, type ProfileChipsProps } from "./ProfileChips";
+export { CalendarReturns, type CalendarReturnsProps } from "./CalendarReturns";
+export { AnnualisedReturns, type AnnualisedReturnsProps } from "./AnnualisedReturns";
+export { FreshnessDial, type FreshnessDialProps } from "./FreshnessDial";
+export { FundFactsheet, type FundFactsheetProps } from "./FundFactsheet";
+export { WidgetCard, type WidgetCardProps, fmtPct } from "./primitives";
+export { FundFactsTheme, darkTheme, tokens, palette, type FundFactsThemeProps, type Tone } from "./theme";
+export type { Weighted, Holding, IndexedPoint, AnnualisedRow, CalendarReturnsData, FundProfileLike, FundDataLike, FundLike } from "./types";
